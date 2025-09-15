@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --red: hsl(5,89%,36%);
+}
+
+
 body {
-    font-size: 1.2em;
+    font-family: "PT Sans", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
 }

@@ -147,6 +147,26 @@ header nav a {
     color: var(--navy);
 }
 
+#about-us h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.25em;
+}
+
+#about-us img {
+    width: 150px;
+    height: 5px;
+    /* If text-align: center doesn't work, set the display property to block, and use margin: 0 auto instead */
+    margin: 15px auto;
+    display: block;
+}
+#about-us p {
+    font-size: 1.25em;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1.5em;
+}
 
 
 

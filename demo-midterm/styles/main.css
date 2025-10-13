@@ -8,7 +8,7 @@
     --red: hsl(356, 100%, 66%);
     --red-light: hsl(355, 100%, 74%);
     --blue-dark: hsl(208, 49%, 24%);
-    --white: hsl(0, 100%, 100%);
+    --gray-light: hsl(207, 13%, 80%);
     --gray-medium: hsl(207, 13%, 34%);
     --gray-dark: hsl(240, 10%, 16%);
     --gradient1: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -47,6 +47,11 @@ header {
 
 #header-bottom-nav {
     background-color: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 #header-bottom-nav li {
@@ -64,4 +69,60 @@ header {
 
 #header-bottom-nav .active, #header-bottom-nav a:hover {
     color: var(--red);
+}
+
+#jumbotron {
+    padding: 100px 40px;
+    text-align: center;
+    color: white;
+}
+#jumbotron h1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+#jumbotron p {
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.btn {
+    padding: 12px 24px 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-filled {
+    background-color: white;
+    color: var(--red);
+}
+
+
+footer {
+    background-color: var(--gray-dark);
+    text-align: center;
+    padding: 100px 40px;
+}
+
+footer h3 {
+    color: white;
+    margin: 20px 0;
+}
+
+footer a {
+    color: var(--gray-light);
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

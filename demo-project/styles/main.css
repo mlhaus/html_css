@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     border-top: 0.5em solid var(--navy);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
 }
 
 #header-logo {
@@ -68,6 +68,12 @@ header nav a {
     align-items: center; /* Vertically centers the contact button with the mobile navigation */
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
 /* Class selectors start with a period */
 .btn {
     background-color: var(--blue);
@@ -89,6 +95,13 @@ header nav a {
     cursor: pointer;
 }
 
+#header-bottom-nav {
+  position: relative;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
 
 #header-bottom-nav li {
     border-bottom: 1px solid lightgrey;
@@ -103,7 +116,6 @@ header nav a {
 #header-bottom-nav .active, #header-bottom-nav a:hover {
     color: var(--blue);
 }
-
 
 #jumbotron-text {
     background-image: url("https://www.lynchdallas.com/application/themes/lynchdallas/img/bkg-pattern.jpg");
@@ -323,6 +335,7 @@ header nav a {
     padding: 24px;
     text-align: center;
     font-size: 13px;
+    line-height: 16px;
   }
   
   #footer-copyright a {
@@ -352,7 +365,7 @@ header nav a {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: .6;
+    opacity: .9;
     mix-blend-mode: overlay;
   }
   
@@ -394,3 +407,48 @@ header nav a {
     display: inline-block;
     text-decoration: none;
   }
+
+  /* I got half of this code from Google Gemini */
+  #to-top-link {
+    padding: 20px;
+    background-color: dodgerblue;
+    -webkit-box-shadow: 2px 5px 7px 0px #000000; 
+    box-shadow: 2px 5px 7px 0px #000000;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    
+    /* Add this to hide the link by default */
+    display: none;
+    
+    /* Added for better icon centering */
+    width: 60px;  /* Fixed width */
+    height: 60px; /* Fixed height */
+    box-sizing: border-box; /* Include padding in width/height */
+    display: none; /* Hide by default */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+#to-top-link i {
+  color: white;
+}
+
+/* This style will be applied by JavaScript */
+#to-top-link.show {
+  display: flex; /* Use flex to center the icon */
+}
+
+/* This style will be applied by JavaScript */
+#to-top-link.show {
+  display: flex; /* Use flex to center the icon */
+}
+
+/* This style will be applied by JavaScript */
+#to-top-link.show {
+  display: flex; /* Use flex to center the icon */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6</title>
+    <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/styles/webawesome.css" />
+    <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/webawesome.loader.js"></script>
+    <style>
+        body {
+            margin: 20px;
+        }
+        #animated-image-1 {
+            float: left;
+            margin-right: 20px;
+        }
+        #animated-image-2 {
+            float: right;
+            margin-left: 20px;
+        }
+        footer {
+            clear: both;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <wa-animated-image
+        id="animated-image-1"
+        src="https://shoelace.style/assets/images/walk.gif"
+        alt="Animation of untied shoes walking on pavement"
+    ></wa-animated-image>
+    <wa-button appearance="accent" variant="success">Success</wa-button>
+    <wa-rating label="Rating"></wa-rating>
+    <wa-animated-image
+        id="animated-image-2"
+        src="https://shoelace.style/assets/images/walk.gif"
+        alt="Animation of untied shoes walking on pavement"
+    ></wa-animated-image>
+    <footer>
+        <p>Copyright</p>
+    </footer>
+</body>
+</html>

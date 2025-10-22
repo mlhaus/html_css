@@ -96,7 +96,7 @@ header nav a {
 }
 
 #header-bottom-nav {
-  position: relative;
+  position: absolute;
   left: 0;
   width: 100%;
   background-color: white;

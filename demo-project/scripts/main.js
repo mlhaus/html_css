@@ -1,4 +1,4 @@
- $(document).ready(() => {
+$(document).ready(() => {
     // This code handles the hamburger menu
     const mobileNav = $('#mobile-nav');
     const headerBottomNav = $('#header-bottom-nav');
@@ -6,6 +6,12 @@
         console.log('clicked');
         headerBottomNav.toggle()
     });
+
+    // Close header-bottom-nav when a link is clicked
+    headerBottomNav.find('a').click(() => {
+        headerBottomNav.hide();
+    });
+
 
     // This code handles showing and hiding the go-to-top button.
     // Source Google Gemini

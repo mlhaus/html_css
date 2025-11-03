@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        #photo-gallery {
+            display: flex;
+        }
+        .photo-card {
+            width: 32%;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="photo-gallery">
+        <div class="photo-card">
+            <picture>
+                <source media="(max-width: 630px)" srcset="https://placehold.co/400x600/yellow/black?text=Mobile+Portrait+(400x600)">
+                <source media="(max-width: 830px)" srcset="https://placehold.co/600x400/red/white?text=Tablet+Landscape+(600x400)">
+                <img src="https://placehold.co/800x400/orange/white?text=Desktop+Landscape+(800x400)" alt="Desktop Placeholder image">
+            </picture>
+        </div>
+        <div class="photo-card">
+            <picture>
+                <source media="(max-width: 630px)" srcset="https://placehold.co/400x600/yellow/black?text=Mobile+Portrait+(400x600)">
+                <source media="(max-width: 830px)" srcset="https://placehold.co/600x400/red/white?text=Tablet+Landscape+(600x400)">
+                <img src="https://placehold.co/800x400/orange/white?text=Desktop+Landscape+(800x400)" alt="Desktop Placeholder image">
+            </picture>
+        </div>
+        <div class="photo-card">
+            <picture>
+                <source media="(max-width: 630px)" srcset="https://placehold.co/400x600/yellow/black?text=Mobile+Portrait+(400x600)">
+                <source media="(max-width: 830px)" srcset="https://placehold.co/600x400/red/white?text=Tablet+Landscape+(600x400)">
+                <img src="https://placehold.co/800x400/orange/white?text=Desktop+Landscape+(800x400)" alt="Desktop Placeholder image">
+            </picture>
+        </div>
+    </div>
+</body>
+</html>

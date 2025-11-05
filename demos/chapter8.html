@@ -13,11 +13,28 @@
         }
         #photo-gallery {
             display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo-card picture  {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .photo-card {
             width: 32%;
-            margin: 10px;
-            border: 1px solid #ccc;
+            border: 5px solid #999;
+            padding: 0.5em;
+        }
+        @media only screen and (max-width: 830px) {
+            .photo-card {
+                width: 49%;
+            }
+        }
+        @media only screen and (max-width: 630px) {
+            .photo-card {
+                width: 100%;
+            }
         }
     </style>
 </head>

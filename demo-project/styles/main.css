@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+#header-logo path {
+  fill: black;
+}
+@media (prefers-color-scheme: dark) {
+  #header-logo path { fill: white; }
+}
+
 /**
  * Smooth scrolling on the whole document
  */

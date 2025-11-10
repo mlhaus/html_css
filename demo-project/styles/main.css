@@ -579,10 +579,9 @@ header nav a {
 /* This style will be applied by JavaScript */
 #to-top-link.show {
   display: flex; /* Use flex to center the icon */
-}}}*/
 }
 
 /* This style will be applied by JavaScript */
 #to-top-link.show {
   display: flex; /* Use flex to center the icon */
-}}
+}

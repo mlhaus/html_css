@@ -1,4 +1,7 @@
 $(document).ready(() => {
+    var currentFileArr = document.location.href.match(/[^\/]+$/);
+    var currentFile = currentFileArr != null ? currentFileArr[0] : "index.html";
+    
      // Display the header and footer consistently across all pages.
      $('#header-placeholder').load('header.html', function() {
         // This code handles the hamburger menu
@@ -12,6 +15,15 @@ $(document).ready(() => {
         headerBottomNav.find('a').click(() => {
             headerBottomNav.hide();
         });
+
+        $('#header-bottom-nav a').each(function() {
+            // Check if the link's href matches the current URL
+            if (currentFile.indexOf($(this).attr('href')) >= 0) {
+                // Add the 'active' class to the matching link
+                $(this).addClass('active');
+            }
+        });
+
      });
 
      $('#footer-placeholder').load('footer.html', function() {

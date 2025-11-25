@@ -1,4 +1,4 @@
-* {
+e: * {
     max-width: 100%;
     max-height: 100%;
     box-sizing: border-box;
@@ -109,6 +109,11 @@ header nav a {
     align-items: center; /* Vertically centers the contact button with the mobile navigation */
 }
 
+/* https://gemini.google.com/share/af86cae4b422 */
+#header-placeholder {
+  display: contents;
+}
+
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
@@ -157,6 +162,7 @@ header nav a {
 
 #header-bottom-nav .active, #header-bottom-nav a:hover {
     color: var(--blue);
+    font-weight: bold;
 }
 
 #jumbotron {
@@ -632,3 +638,102 @@ header nav a {
 #to-top-link.show {
   display: flex; /* Use flex to center the icon */
 }
+
+main {
+  display: block;
+}
+
+#subpage-header {
+  background-image: url("https://www.lynchdallas.com/application/themes/lynchdallas/img/bkg-pattern.jpg");
+  padding: 3em;
+}
+
+#subpage-header h1 {
+  color: var(--blue);
+  font-size: 2.5em;
+  font-weight: normal; /* Don't make the text bold */
+  line-height: 1.25em;
+  text-align: center;
+}
+
+#subpage-header p {
+  color: white;
+  margin: 1em 0; /* Add space above and below paragraph */
+  line-height: 1.25em;
+}
+
+.gallery {
+  padding: 2em 4em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center
+}
+
+.gallery-item {
+  width: 400px;
+  background-color: #ddd;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  border-radius: 10px 10px 0 0;
+}
+
+.gallery-item figcaption {
+  background-color: white;
+  padding: 10px;
+  line-height: 1.2em;
+  border-radius: 0 0 10px 10px;
+}
+
+.data-table {
+  padding: 2em 4em;
+}
+
+table th {
+  text-align: center;
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+thead {
+  background-color: #55608f;
+  color: white;
+}
+
+tbody {
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+  color: white;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+tbody td {
+  position: relative;
+}
+
+tbody td::before:hover {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255,255,255,0.2);
+  z-index: -1;
+}
+
+table {
+  overflow: hidden;
+}
+
+
+

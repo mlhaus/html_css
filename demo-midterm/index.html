@@ -56,18 +56,26 @@
   <main>
 
   <h2>Designed for the future</h2>
-  <img src="images/illustration-editor-mobile.svg" alt="Graphic of a line chart">
 
-  <h2>Introducing an extensible editor</h2>
-  <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.</p>
+  <div id="line-graph">
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/illustration-editor-desktop.svg">
+      <img src="images/illustration-editor-mobile.svg" alt="Graphic of a line chart">
+    </picture>
 
-  <h2>Robust content management</h2>
-  <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    <div>
+      <h2>Introducing an extensible editor</h2>
+      <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+      The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+      videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+      change the looks of a blog.</p>
 
+      <h2>Robust content management</h2>
+      <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    </div>
+
+  </div>
   <!-- <div id="infrastructure">
     <img src="images/illustration-phones.svg" alt="Two cellphone graphics with Blogr logo">
     <h2>State of the Art Infrastructure</h2>
@@ -75,40 +83,55 @@
     This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
   </div> -->
 
-  <h2>Free, open, simple</h2>
-  <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+  <div id="laptop">
+    <picture>
+      <source media="(min-width: 900px)" srcset="images/illustration-laptop-desktop.svg">
+      <img src="images/illustration-laptop-mobile.svg" alt="Graphic of a laptop">
+    </picture>
 
-  <h2>Powerful tooling</h2>
-  <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.</p>
+    <div>
+      <h2>Free, open, simple</h2>
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
 
+      <h2>Powerful tooling</h2>
+      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.</p>
+    </div>
+
+  </div>
   </main>
 
   <footer>
     <img src="images/logo.svg" alt="Blogr Logo">
-    <h3>Product</h3>
-    <ul>
-      <li><a href="#">Overview</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Marketplace</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Integrations</a></li>
-    </ul>
-    <h3>Company</h3>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-    </ul>
-    <h3>Connect</h3>
-    <ul>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Newsletter</a></li>
-      <li><a href="#">LinkedIn</a></li>
-    </ul>
+    <div>
+      <h3>Product</h3>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
   </footer>
 
   <div class="attribution">

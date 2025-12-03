@@ -105,12 +105,59 @@ header {
     color: var(--red);
 }
 
+@media (min-width: 900px) {
+    #line-graph {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #line-graph picture, #line-graph div {
+        width: 50%;
+    }
+
+    #line-graph div {
+        text-align: left;
+    }
+    
+
+
+    /* #laptop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+
+    #laptop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #laptop picture, #laptop div {
+        width: 50%;
+    }
+
+    #laptop div {
+        text-align: left;
+    }
+}
 
 footer {
     background-color: var(--gray-dark);
     text-align: center;
     padding: 100px 40px;
     border-radius: 0 100px 0 0;
+}
+
+@media (min-width: 680px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 }
 
 footer h3 {
@@ -159,3 +206,6 @@ main p {
 #infrastructure h2, #infrastructure p {
     color: white;
 }
+
+
+
